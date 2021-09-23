@@ -135,7 +135,7 @@ app.get('/statement/date', verifyIfExistsAccountCPF, (request, response) => {
 	// 10/10/2021
 	const statement = customer.statement.filter(
 		(statement) =>
-			statement.created_at.toDateString() === dateFormat.toDateString()
+			statement.create_at.toDateString() === dateFormat.toDateString()
 	);
 
 	// console.log('******************* customerContaCorrente:', customer);
